@@ -1,0 +1,25 @@
+.jquery-modal.blocker {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1000;
+}
+
+.jquery-modal .modal {
+    max-width: 800px;
+}
+
+.jquery-modal .modal a.close-modal {
+    top: 6px;
+    right: 6px;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .jquery-modal .modal {
+        width: 100%;
+    }
+
+}
