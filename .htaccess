@@ -1,0 +1,2 @@
+# Redirect index.html to index.php
+Redirect /index.html /index.php
