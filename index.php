@@ -13,11 +13,14 @@
       <meta property="og:image" content="https://www.wingsoverhaiti.net" />
       <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
       <script type="text/javascript" src="js/jquery.validate.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
       <script src="js/jquery.slicknav.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.css" />
       <link rel="stylesheet" type="text/css" href="css/slicknav.css">
       <link rel="stylesheet" type="text/css" href="css/loader.css">
+      <link rel="stylesheet" type="text/css" href="css/modal.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       <script type="text/javascript">
          function showLoader() {
@@ -145,46 +148,7 @@
       <div id="fb-root"></div>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
       <div id="main">
-      <header>
-      <!-- <section class="content-block banner kents-well">
-            <article>
-               <div class="call-to-action-left">
-                  <h2>With almost half of Haiti facing extreme hunger*...</h2>
-                  <h4 class="mobile-hide">Please help us to ensure that our children continue to receive BOTH nourishment and a high-quality education!</h4>
-                  <h4 class="desktop-hide">help our kids continue to receive BOTH nourishment &amp; a high-quality education!</h4>
-                  <p>*The UN World Food Programme</p>
-                  <div class="paypalButton desktop-hide">
-                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_donations">
-                        <input type="hidden" name="business" value="jdjeunecpa@gmail.com">
-                        <input type="hidden" name="lc" value="US">
-                        <input id="paypal-message-mobile" type="hidden" name="item_name" value="Thank you for helping provide nourishing food and high-quality education to our kids during this challenging time in Haiti.">
-                        <input type="hidden" name="no_note" value="0">
-                        <input type="hidden" name="currency_code" value="USD">
-                        <input type="submit" value="DONATE" title="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                     </form>
-                  </div>
-               </div>
-               <div class="call-to-action-right">
-                  <div class="paypalButton">
-                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_donations">
-                        <input type="hidden" name="business" value="jdjeunecpa@gmail.com">
-                        <input type="hidden" name="lc" value="US">
-                        <input id="paypal-message-desktop" type="hidden" name="item_name" value="Thank you for helping provide nourishing food and high-quality education to our kids during this challenging time in Haiti.">
-                        <input type="hidden" name="no_note" value="0">
-                        <input type="hidden" name="currency_code" value="USD">
-                        <input type="image" src="images/donate_crisis_update_desktop.png" border="0" width="" name="submit" alt="PayPal - The safer, easier way to pay online!" title="DONATE">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                     </form>
-                  </div>
-               </div>
-            </article>
-         </section> -->
-		  <!-- <section class="content-block banner">
-		  	<a href="https://www.eventbrite.com/e/hamptons-artists-for-haiti-tickets-915786681617?utm_experiment=test_share_listing&aff=ebdsshios" target="_blank"><img class="mobile-hide show-1024" src="images/benefit_banner_2024_1024.png" alt="7th Annual Hamptons Artists for Haiti Benefit Bash | Saturday, July 20th 5:30-8:00pm" /><img class="desktop-hide tablet-hide" src="images/benefit_banner_2024_mobile.png" alt="6th Annual Hamptons Artists for Haiti Benefit Bash | Saturday, July 20th 5:30-8:00pm" /><img class="show-1500" src="images/benefit_banner_2024_1500.png" alt="6th Annual Hamptons Artists for Haiti Benefit Bash | Saturday, July 20th 5:30-8:00pm" /></a>
-		  </section> -->
+         <header>
          	<section class="content-block banner be-a-buddy">
             <article>
                <div class="call-to-action-left">
@@ -321,15 +285,11 @@
             position:relative;
             background:url(images/every_child_02.jpg) no-repeat;
             background-size:contain;
-            /* background-position:0px 40px; */
          }
       </style>
       <link rel="stylesheet" type="text/css" href="css/carousel.css" />
       <section class="content-block every-child">
          <article>
-            <!-- <h3>Donate to Build a Well</h3>
-            <h4>So the Kids Have Clean Water to Drink!</h4>
-            <h5>Where there's a will, there's a well.</h5> -->
             <h3>Every Child</h3>
             <h4>Deserves a Chance</h4>
             <h5>We've built one school already. <br/>With your help we're doing it again.</h5>
@@ -466,7 +426,6 @@
          <section class="content-block ranquitte">
             <article>
                <h3>OUR NEW SCHOOL IN RANQUITTE IS OPEN AND EXPANSION IS ONGOING!</h3>
-               <!--<h3>Our 2<sup>nd</sup> school, <span>in</span> Ranquitte<br/>Construction has begun!</h3>-->
                <h4>Build a school. <br class="desktop-hide" />Build a human being.</h4>
                <div class="article-content">
                   <div class="article-content-image tablet-hide">
@@ -569,16 +528,21 @@
             </article>
          </section>
       </div>
+
+      <div id="popupmodal" class="modal fade" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <a href="https://givebutter.com/5pehRy?s=gAxkz0" target="_blank"><img src="images/summer_2025_invite.jpg" alt="Please Join Us" /></a>
+               </div>
+               <div class="modal-footer">
+               </div>
+            </div>
+         </div>
+      </div>  
+
       <script src="js/carousel.js" type="text/javascript" charset="utf-8"></script>
       <script type = "text/javascript">
-
-         //const monthNames= ["January","February","March","April","May","June","July",
-            //"August","September","October","November","December"];
-         //let currentDate = new Date();
-         //const month = currentDate.getMonth();
-         //document.getElementById("paypal-message-desktop").value = `This ${monthNames[month]}, all donations go to building Kent's Well`;
-         //document.getElementById("paypal-message-mobile").value = `This ${monthNames[month]}, all donations go to building Kent's Well`; 
-			//document.getElementById("current-month").innerHTML = monthNames[month];
 
          function cycleImages() {
              var $active = $('#cycler .active');
@@ -609,8 +573,12 @@
          
          $(window).load(function() {
              cycleImages();
+             //$('#popupmodal').modal({
+              // fadeDuration: 500,
+              // fadeDelay: 0.25
+            //});
          });
-         
+
          $(window).resize(function() {
              setCtaHeight();
          });
