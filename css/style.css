@@ -179,6 +179,23 @@
  header #buttons .paypalButton img {
      display:none;
 }
+
+/* event banner */
+
+.event-banner {
+    width: 100%;
+    text-align: center;
+    background-color: #fbf6f0;
+}
+
+.event-banner img {
+    width: 100%;
+}
+
+.event-banner img.mobile-only {
+        display: none;
+    }
+
 /* content */
  section.content-block {
      width:100%;
@@ -1576,9 +1593,9 @@ section.content-block.events-content .events-right .events-highlight {
      margin-right:4%;
 }
  section.content-block.in-the-news-content article .in-the-news-content-inner a {
-     font: normal 14px/1 'Lato', Arial, sans-serif;
+     font: normal 18px/1 'Lato', Arial, sans-serif;
      text-align: left;
-     padding: 4px 40px;
+     padding: 10px 40px;
      color: #070707;
      font-weight: 900;
      cursor: pointer;
@@ -2415,6 +2432,20 @@ section.content-block.events-content .events-right .events-highlight {
 		/* display:block!important; */
 	}
 
+.event-banner {
+    padding-block: 10px;
+}
+
+    img.desktop-only {
+        display: none;
+    }
+
+    .event-banner img.mobile-only {
+        display: block;
+        width: auto;
+        margin: 0px auto;
+    }
+
 header nav {
 margin: 0px;
 }
@@ -2438,7 +2469,7 @@ margin: 0px;
          margin-top: 42px; */
          z-index: 1000;
          position: absolute;
-         top: 170px;
+         top: 193px;
          width: 122px;
          left: 0px;
 	 }
@@ -3127,6 +3158,14 @@ margin: 0px;
         display:none!important;
    }
 
+       .event-banner {
+        padding-block: 0px;
+    }
+
+   .event-banner img.mobile-only {
+        width: 96%;
+    }
+
    header {
     padding-bottom:0px;
     height: 61px;
@@ -3160,7 +3199,7 @@ header #logo h1 {
     margin: 8px 0 0 16px;
     width:130px;
     height:46px;
-    top: 0px!important;
+    top: 20px!important;
 }
 
    .home header #logo {
