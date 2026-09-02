@@ -149,7 +149,13 @@
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
       <div id="main">
          <header>
-         	<section class="content-block banner be-a-buddy">
+            <section class="event-banner">
+               <a href="https://www.eventbrite.com/e/hamptons-artists-for-haiti-fundraiser-bash-tickets-1990791434772">
+                  <img class="desktop-only" src="images/event_2026.jpg" alt="Hamptons Artists for Haiti" />
+                  <img class="mobile-only" src="images/event_2026_mobile.jpg" alt="Hamptons Artists for Haiti" />
+               </a>
+            </section>
+         	<!--<section class="content-block banner be-a-buddy">
             <article>
                <div class="call-to-action-left">
                   <h2>Be a buddy. Sponsor a child</h2>
@@ -209,7 +215,7 @@
 				   </div>
                </div>
             </article>
-         </section>
+         </section>-->
          <div id="logo">
             <h1 title="Wings Over Haiti">Wings Over Haiti</h1>
             <h2 class="mobile-hide" title="Helping the Children of Haiti Soar">Helping the Children of Haiti Soar</h2>
