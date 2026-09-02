@@ -8,6 +8,12 @@
 <section class="content-block in-the-news-content">
 	<article>
     	<div class="in-the-news-content-inner">
+	    	<h4>Hamptons Artists for Haiti Summer Benefit<br/>&#8211; Hamptons.com</h4>
+    	    <a href="https://hamptons.com/hamptons-artists-for-haiti-summer-benefit/" target="_blank">Continue to Article</a>
+        </div>
+    </article>	
+	<article>
+    	<div class="in-the-news-content-inner">
 	    	<h4>In Haiti, a Note of Grace in Dark Times<br/>&#8211; The East Hampton Star</h4>
     	    <a href="https://www.easthamptonstar.com/index.php/villages/202679/haiti-note-grace-dark-times" target="_blank">Continue to Article</a>
         </div>
